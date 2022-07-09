@@ -1,0 +1,134 @@
+/* RESET =================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* VARIAVEIS ===========================================*/
+html {
+  --color-base: #222D6B;
+  --color-title: #4F68F7;
+  --color-line: #3748ab;
+  --color-button: #4B63EB;
+  --color-alt:#4358D1;
+}
+
+body {
+  background: var(--color-base);
+}
+
+body.secondcolor {
+  --color-base: #6B0B43;
+  --color-title: #F7199B;
+  --color-line: #AB116B;
+  --color-button: #EB1793;
+  --color-alt:#D11582;
+}
+
+
+/*Base =================================================*/
+
+
+/*Header ===============================================*/
+.header {
+  display: inline;
+  font-size: 30px;
+}
+
+.divider {
+  height: 0.11875rem;
+  background: var(--color-line);
+}
+
+.title {
+  color: var(--color-title);
+  font-size: 1.5rem;
+}
+
+.title span {
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+/* User information ===================================*/
+
+.user  {
+  color: white;
+}
+
+.user img{
+  display: flex;
+  margin: 3.75rem auto;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+
+  border: solid 4px var(--color-line);
+  padding: 4px;
+}
+
+.user h1 {
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+
+.user p {
+  margin: 2.5rem;
+  font-size: 1.3rem;
+  font: 400 1.675rem "Italiana", sans-serif;
+}
+
+/*Contact ============================================*/
+
+ul {
+  margin: 3rem;
+  font: 800 2rem "Baloo 2" , sans-serif;
+}
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-button);
+  color: white;
+  height: 3.5rem;
+  
+
+  border-radius: 1.875rem;
+  margin-bottom: 1.06rem;
+
+  transition: 400ms;
+ 
+}
+
+ul li a:hover {
+  background: var(--color-alt);
+  transform: translateY(-10%);
+  text-transform: uppercase;
+}
+
+/*Footer ============================================*/
+
+footer {
+  display: inline;
+  text-align: center;
+  
+}
+
+footer a {
+  color: white;
+  opacity: 20%;
+  margin-bottom: 3rem;
+  font: 400 .75rem "Italiana", sans-serif;
+}
